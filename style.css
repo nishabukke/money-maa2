@@ -1250,12 +1250,30 @@ li {
 
 /* fade effects */
 
-.animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
+
+.reveal{
+    /* position: relative; */
+    opacity: 0;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }
+
+.active.fadeInUp {
+    animation: fadeInUp .5s ease-in;
     animation-fill-mode: both;
-}
+  }
+
+.active.fadeInLeft {
+    animation: fadeInLeft .5s ease-in;
+    animation-fill-mode: both;
+  }
+
+.active.slideInDown {
+    animation: slideInDown .5s ease-in;
+    animation-fill-mode: both;
+  }
 
 
 @keyframes fadeInUp {
