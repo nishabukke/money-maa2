@@ -102,3 +102,40 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+
+// mobile menu
+
+$( document ).ready(function() {
+
+  $( ".cross" ).hide();
+  $( ".menu" ).hide();
+  $( ".hamburger" ).click(function() {
+  $( ".menu" ).slideToggle( "slow", function() {
+  $( ".hamburger" ).hide();
+  $( ".cross" ).show();
+  });
+  });
+  
+  $( ".cross" ).click(function() {
+  $( ".menu" ).slideToggle( "slow", function() {
+  $( ".cross" ).hide();
+  $( ".hamburger" ).show();
+  });
+  });
+  
+  });
+
+ // Close out sub menu
+ $('.sub__close').click(function(e) {
+  e.preventDefault();
+  
+  $(this).parent().parent().removeClass('is-active');
+});
+
+// Trigger sub menu
+$('.menu ul .nav__submenu').click(function(e) {
+  e.preventDefault();
+  
+  $(this).siblings().addClass('is-active');
+});
