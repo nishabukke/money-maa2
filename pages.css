@@ -1399,6 +1399,151 @@ li {
 }
 
 
+/*************** MEDIA QUERIES **************/
+
+@media screen and (max-width:768px) {
+
+
+    /* common css */
+
+
+    .hamburger, .cross, .menu{
+        display: block;
+      }
+
+    h1{
+        font-size: 34px;
+        line-height: 34px;
+    }
+    
+    h3 {
+        font-size: 28px;
+    }
+
+    .section-padding{
+        padding: 30px 0px;
+    }
+
+    p{
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    /* header css */
+
+    .header-area, .header-top-area, .client-area{
+        display: none;
+    }
+
+    .header-info{
+        justify-content: center;
+    }
+
+    .header-info p{
+        font-size: 12px;
+    }
+
+    .contact-info a {
+        padding: 3px 10px;
+        font-size: 12px;
+    }
+
+    .social-icon{
+        text-align: center;
+    }
+
+    .mobile-header{
+        padding: 10px 0px;
+        display: block;
+    }
+
+    .mobile-menu-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-logo a{
+        color: #fff;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .section-title{
+        margin-bottom: 15px;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+        line-height: 37px;
+    }
+
+    .section-title a {
+        font-size: 34px;
+        line-height: 37px;
+    }
+
+    .section-title h6 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 12px;
+        padding: 5px 10px;
+        margin-bottom: 15px;
+    }
+
+        /* counter section start */
+
+        .single-counter-box p.counter-number {
+            font-size: 24px;
+            line-height: normal;
+            font-weight: 500;
+            margin: 0;
+        }
+    
+        .single-counter-box h6 {
+            font-size: 16px;
+            line-height: normal;
+        }
+    
+        .counter-area .row{
+            gap: 20px;
+            justify-content: center;
+        }
+    
+        /* counter section end */
+
+    /* about page css */
+
+    .about-left-wrap {
+        min-width: 100%;
+    }
+
+    .about-left-img {
+        margin-bottom: 20px;
+    }
+
+    /* footer section start */
+
+    .footer-widget h5 {
+        display: none;
+    }
+
+    .footer-shape img{
+        width: 65%;
+    }
+
+    .founder-year-wrap span{
+        margin: 35px 0px;
+    }
+
+    .social-icon{
+        text-align: start;
+    }
+
+    /* footer section end */
+
+}
+
 
 @media screen and (max-width:450px) {
 
@@ -1639,6 +1784,35 @@ li {
     }
     /* contact area section end */
 
+    /* contact page section */
+
+    .breadcrumb-area.services.contact h2 {
+        font-size: 21px;
+        line-height: 25px;
+    }
+
+    .contact-page-inner {
+        padding: 30px;
+    }
+
+    .contact-form-wrapper {
+        max-width: 100%;
+    }
+
+    .contact-icon {
+        background: #FFB966;
+        margin: 0 30px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact-icon i {
+        font-size: 18px;
+    }
+
+    .contact-details .contact-info h5 {
+        font-size: 12px;
+    }
     /* footer section start */
 
     .footer-area .row{
