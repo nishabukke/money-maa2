@@ -686,6 +686,17 @@ img {
     padding: 35px;
 }
 
+.bg-tag-orange{
+    background: #ffb966;
+    padding: 35px;
+}
+
+.bg-tag-orange h2{
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0;
+}
+
 .bread-bg .bg-tag h2 {
     font-size: 48px;
     font-weight: 600;
@@ -746,6 +757,81 @@ img {
 
 /********************     CHILD FUTURE SAVING, RETIREMENT, PMS PAGE  *********************/
 /********************     CSS  END  *********************/
+
+
+
+
+/********************     TAB SECTION  *********************/
+/********************     CSS  START  *********************/
+
+
+.tab-area{
+    padding: 50px 0px;
+}
+
+#SectionTab1, #SectionTab2{
+    margin-top: 80px;
+}
+
+.tax-deduction1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.TabButton:hover{
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    background-color: #ffb966;
+    color: #fff;
+}
+
+.TabButtonSelected:after{
+    display: block;
+    content: '';
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: -6px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 7px 0 7px;
+    border-color: #056250 transparent transparent transparent;
+    transition: none !important;
+}
+
+.TabButton {
+    font-weight: 600;
+    width: 100%;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+    letter-spacing: .1em;
+    padding: 13px 50px;
+    color: #056250;
+    border: 1px solid #e5e7e9;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.TabButtonSelected {
+  color: #fff !important;
+  background-color: #056250 !important;
+  font-weight: 600;
+  border: none;
+}
+.d-chart-n {
+display: none;
+}
+
+.d-chart-show {
+display: block;
+}
+
+
+/********************     TAB SECTION  *********************/
+/********************     CSS  END  *********************/
+
 
 
 
@@ -1429,6 +1515,10 @@ li {
         line-height: normal;
     }
 
+    .mt-90 {
+        margin-top: 45px;
+    }
+
     /* header css */
 
     .header-area, .header-top-area, .client-area{
@@ -1522,11 +1612,60 @@ li {
         margin-bottom: 20px;
     }
 
+    /* service page css start */
+
+    .bread-bg .bg-tag h2 {
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .bread-bg .bg-tag{
+        padding: 10px;
+    }
+
+    .service-list p {
+        margin: 15px 0px;
+        font-size: 14px;
+    }
+
+    .service-page-content h2 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .pb-60 {
+        padding-bottom: 30px;
+    }
+    /* service page css end */
+
+
+    /* contact page css start */
+
+    .breadcrumb-area.services.contact h2 {
+        font-size: 32px;
+        line-height: 37px;
+    }
+
+    .contact-details .contact-icon {
+        flex: 0 0 45px;
+    }
+
+    .contact-icon {
+        height: 45px;
+    }
+
+    .contact-icon i {
+        font-size: 20px;
+    }
+
+    .contact-details .contact-info h5 {
+        font-size: 16px;
+    }
+
+    /* contact page css end */
+
     /* footer section start */
 
-    .footer-widget h5 {
-        display: none;
-    }
 
     .footer-shape img{
         width: 65%;
@@ -1548,7 +1687,6 @@ li {
 @media screen and (max-width:450px) {
 
     /* common css */
-
 
     .hamburger, .cross, .menu{
         display: block;
@@ -1656,19 +1794,19 @@ li {
     .about-feature-list ul li {
         display: block;
         font-family: "Syne", sans-serif;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 500;
         display: flex;
         align-items: center;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
     
     .about-feature-list ul li i {
-        font-size: 13px;
-        margin-right: 15px;
+        font-size: 8px;
+        margin-right: 8px;
         color: #056251;
         border: 1px solid #056251;
-        padding: 3px 4px;
+        padding: 2px 3px;
         border-radius: 50%;
     }
 
@@ -1694,6 +1832,7 @@ li {
     }
 
     .service-page-content h2 {
+        font-size: 18px;
         margin-top: 30px;
         margin-bottom: 10px;
     }
@@ -1707,6 +1846,26 @@ li {
         font-size: 12px;
     }
     
+    .tab-area{
+        padding: 0;
+    }
+
+    .TabButton {
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+
+    #SectionTab1, #SectionTab2 {
+        margin-top: 30px;
+    }
+
+    .bg-tag-orange {
+        padding: 15px;
+    }
+    
+    .bg-tag-orange h2 {
+        font-size: 20px;
+    }
 
     /* services page css end */
 
