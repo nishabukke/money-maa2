@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
       <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="pages.css">
     <link rel="shortcut icon" href="images/logo-round-t.ico" type="image/x-icon">
     <title>Money Maa</title>
@@ -71,7 +70,7 @@
                                         </li> 
                                         
                                         <li class="nav-item">
-                                            <a class="nav-link active" href="#">Services
+                                            <a class="nav-link" href="#">Services
                                                 <span class="sub-nav-toggler"> </span>
                                             <button class="sub-nav-toggler"> <i class="fa-solid fa-angle-down"></i> </button></a>
                                             <ul class="sub-menu">
@@ -82,7 +81,7 @@
                                                     <a href="child-future-saving.html">Child Future Saving</a>
                                                 </li>                                                
                                                 <li>
-                                                    <a href="retirement-saving.html" class="active">Retirement Planning</a>
+                                                    <a href="retirement-saving.html">Retirement Planning</a>
                                                 </li>                                                
                                                 <li>
                                                     <a href="taxation.html">Taxation</a>
@@ -96,7 +95,7 @@
                                             </ul>
                                         </li>                                                            
                                         <li class="nav-item">
-                                            <a class="nav-link" href="calculators.html">Financial Calculators</a>
+                                            <a class="nav-link active" href="calculators.html">Financial Calculators</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="contact.html">Contact Us</a>
@@ -150,9 +149,9 @@
                             </li>
                         </ul>
                     </a>
-                    </li>
-                    <li><a href="calculators.html">Financial Calculators</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                </li>
+                <li><a href="calculators.html">Financial Calculators</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div> 
                 </div>
@@ -161,14 +160,13 @@
 
     <!-- breadcrumb section -->
 
-    <div class="breadcrumb-area services retirement section-padding light-bg-1 pb-0">
+    <div class="breadcrumb-area calculator section-padding light-bg-1 pb-0">
         <div class="container header-container">
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-12 text-center">
                     <div class="section-title">
-                        <p>Retirement Planning</p>
-                        <h2>We Provide Quality 
-                            Services.</h2>
+                        <p>Financial Calculators</p>
+                        <h2>Where Quality Meets Calculation</h2>
                     </div>
                 </div>
             </div>
@@ -176,9 +174,9 @@
             <div class="row mt-90">
                 <div class="col-12">
                     <div class="bread-bg">
-                        <img src="images/retirement-saving.jpg" alt="">
+                        <img src="images/financial-calculaor.jpg" alt="" style="width: 100%;">
                         <div class="bg-tag">
-                            <h2>Retirement Planning</h2>
+                            <h2>Financial Calculators</h2>
                         </div>
                     </div>
                 </div>
@@ -188,34 +186,40 @@
 
     <!-- service page -->
 
-    <div class="service-page pb-60">
+    <div class="service-page calculator-tabs pb-60">
         <div class="container header-container">
-             <div class="col-xl-12">
-                 <div class="service-page-content">
-                     <p>Retirement saving is a much sought and discussed subject in our time. It is said that retirement assesment is never too late though ideal if you start it at very young age. Retirement is the ultimate reality that happens to a working professional and it should be the most enjoyable phase of an individual. Effective retirement assesment gives individual a benefit to retain their financial independence even after their work life. Thus, retirement assesment is as important as your education and marriage. We must understand that future largely depends on the choices that we make today. An individual will be able to maintain high standards of living with the help of effective retirement assesment.<br> <br>
-                        The importance of a well-thought-out retirement assessment lies in its potential to shape an individual's future, determining the quality of life during the golden years. Recognizing that the choices made today profoundly impact the years ahead, prudent retirement planning becomes paramount. Through strategic and effective assessment, individuals position themselves to uphold elevated standards of living even after exiting the workforce. Essentially, an adeptly crafted retirement plan is the key to maintaining financial autonomy and enjoying the fruits of one's labor well into retirement. As such, viewing retirement assessment as an integral life milestone is not just a financial wisdom but a vital component of holistic life planning.</p>
-                     <h2>Benefits of Retirement Saving</h2>
-                     <div class="about-feature-list service-list">
-                        <div class="row">
-                            <div class="col-md-6 col-12">
-                                <ul>
-                                    <li><i class="fa-solid fa-check"></i>Financial Independence</li>
-                                    <p>Building a retirement savings nest egg empowers individuals to maintain financial independence after leaving the workforce. This ensures a degree of self-sufficiency and reduces dependence on external support systems.</p>
-                                        <li><i class="fa-solid fa-check"></i>Maintaining Lifestyle</li> 
-                                        <p>Retirement savings enable individuals to sustain their desired lifestyle even after they stop working. This includes covering living expenses, engaging in hobbies, traveling, and enjoying leisure activities without compromising on quality of life.</p>                                       
-                                </ul>
+             <div class="row">
+                <div class="sip-calculator">
+                    <div class="row">
+                        <div class="col-12 col-md-3 col-lg-3 col-sm-3">
+                            <div class="d-flex justify-content-center flex-column text-center"> 
+                              <div class="TabButton TabButtonSelected" id="Tab1" onclick="activeTab(event, 'Tab1')">SIP Calculator</div>
+                              <div class="TabButton "id="Tab2" onclick="activeTab(event, 'Tab2')">SIP Step-up Calculator</div>
+                              <div class="TabButton "id="Tab3" onclick="activeTab(event, 'Tab3')">Education Calculator</div>
+                              <div class="TabButton "id="Tab4" onclick="activeTab(event, 'Tab4')">Marriage Calculator</div>
+                              <div class="TabButton "id="Tab5" onclick="activeTab(event, 'Tab5')">Retirement Calculator</div>
                             </div>
-                            <div class="col-md-6 col-12">
-                                <ul>
-                                    <li><i class="fa-solid fa-check"></i>Emergency Preparedness</li>
-                                    <p>Having a retirement savings fund provides a financial safety net in case of unexpected expenses or emergencies during retirement. This can include medical costs, home repairs, or other unforeseen circumstances, reducing the impact on overall financial well-being.</p>
-                                    <li><i class="fa-solid fa-check"></i>Compounding Growth</li>
-                                    <p>Starting retirement savings early allows for the benefits of compounding growth. Over time, the initial investments generate returns, and those returns, in turn, generate their own returns. This compounding effect can significantly enhance the overall value of the retirement portfolio.</p>
-                                </ul>
+                        </div>
+                        <div class="col-12 col-md-9 col-lg-9 col-sm-9">
+                            <div id="SectionTab1" class="tab-section d-chart-n d-chart-show" >
+                                <iframe loading="lazy" src="https://www.investwell.in/updation/parameter/Calculator/par_sip_calculatorN.jsp?share=N" width="100%" height="450" frameborder="0" scrolling="auto"></iframe>
+                            </div>
+                            <div id="SectionTab2" class="tab-section d-chart-n">
+                                <iframe src="https://www.investwell.in/updation/parameter/Calculator/par_sip_stepup_calculatorN.jsp" width="100%" height="850" frameborder="0" scrolling="auto"></iframe>
+                            </div>
+                            <div id="SectionTab3" class="tab-section d-chart-n">
+                                <iframe src="https://www.investwell.in/updation/parameter/Calculator/par_education_plannerN.jsp?obgl=eeeeee&amp;fs=14&amp;ol=222222&amp;obgr=dddddddd&amp;or=111111&amp;share=N" width="100%" height="1050" frameborder="0" scrolling="auto"></iframe>
+                            </div>
+                            <div id="SectionTab4" class="tab-section d-chart-n">
+                                <iframe src="https://www.investwell.in/updation/parameter/Calculator/par_marriage_plannerN.jsp?bbg=ffffff&amp;fs=12&amp;fsh=14&amp;bt=000000&amp;ht=ffffff&amp;lc=cccccc&amp;ocl=009d07&amp;share=N" width="100%" height="1250" frameborder="0" scrolling="auto"></iframe>
+                            </div>
+                            <div id="SectionTab5" class="tab-section d-chart-n">
+                                <iframe src="https://www.investwell.in/updation/parameter/Calculator/par_retirement_calculatorN.jsp?obgl=eeeeee&amp;fs=14&amp;ol=222222&amp;obgr=dddddddd&amp;or=111111&amp;share=N" width="100%" height="1350" frameborder="0" scrolling="auto"></iframe>
                             </div>
                         </div>
                     </div>
-                 </div>
+                   </div>
+                </div>
              </div>
         </div> 
      </div>
@@ -327,31 +331,6 @@
     <div class="footer-bottom yellow-bg">
         <p>©Copyright 2023. All Rights Reserved. NspireSoft LLP</p>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

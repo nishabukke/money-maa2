@@ -7,7 +7,7 @@
     height: 100%;
     width: 100%;
     z-index: 999999;
-    background-color: #056251;
+    background-color: #185a66;
     background-position: center center;
     background-repeat: no-repeat;
     background-image: url('images/preloader.svg');
@@ -32,7 +32,7 @@ i, span, a {
 }
 
 a:hover{
-    color: #056251;
+    color: #185a66;
 }
 
 ul {
@@ -54,7 +54,7 @@ p {
     font-weight: 400;
     line-height: 28px;
     position: relative;
-    color: #555555;
+    color: #383838;
 }
 
 a {
@@ -74,7 +74,7 @@ img {
 
 /* top header */
 
-.sticky-area{background-color: #FCF2E8;}
+.sticky-area{background-color: #ecf5f7;}
 
 .header-top-area {
     padding: 10px 0;
@@ -85,7 +85,7 @@ img {
 }
 
 .green-bg {
-    background: #056250;
+    background: #185a66;
 }
 
 .header-info {
@@ -96,7 +96,7 @@ img {
 
 .header-info i {
     font-size: 18px;
-    color: #FFB966;
+    color: #f08143;
 }
 
 .header-info p {
@@ -114,10 +114,10 @@ img {
 
 .contact-info a {
     display: inline-block;
-    background: #FFB966;
+    background: #f08143;
     padding: 6px 24px;
     border-radius: 10px;
-    color: #444;
+    color: #fff;
 }
 
 .social-icon i {
@@ -157,7 +157,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: #cddadc;
     border-radius: 0 0 10px 10px;
     padding: 0 30px;
 }
@@ -172,16 +172,29 @@ img {
     font-size: 30px;
 }
 
+.logo img{
+    width: 150px;
+}
+
 .main-menu .navbar {
     padding: 0;
 }
 
 .main-menu li.nav-item:hover > a {
-    color: #056251;
+    color: #f08143;
+}
+
+.main-menu li.nav-item a.active {
+    color: #f08143;
 }
 
 .main-menu .sub-menu li:hover > a {
-    background: #056251;
+    background: #f08143;
+    color: #fff;
+}
+
+.main-menu .sub-menu li a.active {
+    background: #f08143;
     color: #fff;
 }
 
@@ -200,7 +213,7 @@ img {
     font-weight: 600;
     display: block;
     padding: 35px 0;
-    color: #061815;
+    color: #185a66;
 }
 
 .header-area .is-sticky .main-menu li:hover .sub-menu {
@@ -225,7 +238,7 @@ img {
     height: 4px;
     top: 0;
     left: 0;
-    background: #056251;
+    background: #185a66;
     visibility: hidden;
     opacity: 0;
 }
@@ -279,7 +292,7 @@ img {
 }
 
 .header-right a {
-    color: #061815;
+    color: #185a66;
     font-family: "Syne", sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -295,7 +308,7 @@ img {
     left: 0;
     width: 100%;
     height: 1px;
-    background: #056250;
+    background: #185a66;
 }
 
 .header-right a i {
@@ -327,7 +340,7 @@ img {
 }
 
 .section-title p {
-    color: #056251;
+    color: #185a66;
     text-transform: uppercase;
     font-size: 16px;
     font-style: italic;
@@ -343,7 +356,7 @@ img {
     left: 0;
     width: 60px;
     height: 2px;
-    background: #056250;
+    background: #185a66;
     margin-top: -1px;
 }
 
@@ -369,7 +382,7 @@ img {
 .breadcrumb-area h3 {
     font-size: 30px;
     font-weight: 600;
-    color: #056251;
+    color: #185a66;
     margin: 30px 0;
 }
 
@@ -422,7 +435,7 @@ img {
     font-size: 48px;
     font-weight: 600;
     line-height: 60px;
-    color: #ffb966;
+    color: #f08143;
     position: relative;
     z-index: 1;
 }
@@ -434,7 +447,7 @@ img {
     left: 0;
     width: 100%;
     height: 4px;
-    background: #ffb966;
+    background: #f08143;
 }
 
 .mt-60 {
@@ -442,7 +455,7 @@ img {
 }
 
 .feature-item-wrap {
-    background: #056251;
+    background: #185a66;
     padding: 30px;
     padding-top: 80px;
     z-index: 1;
@@ -451,7 +464,7 @@ img {
 }
 
 .feature-item-wrap .feature-icon {
-    background: #056251;
+    background: #185a66;
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -474,13 +487,13 @@ img {
     right: -2px;
     width: 100%;
     height: 100%;
-    background: #FFB966;
+    background: #f08143;
     border-radius: 50%;
     z-index: -1;
 }
 
 .feature-item-wrap:hover .feature-icon::after {
-    background: #056251;
+    background: #185a66;
 }
 
 .feature-item-wrap::after {
@@ -490,7 +503,7 @@ img {
     bottom: 12px;
     height: 16px;
     width: 16px;
-    background: #FFB966;
+    background: #f08143;
     -webkit-transition: 0.4s;
     transition: 0.4s;
 }
@@ -516,7 +529,7 @@ img {
 
 
 .feature-item-wrap:hover .feature-icon {
-    background: #FFB966;
+    background: #f08143;
 }
 
 
@@ -547,7 +560,7 @@ img {
 }
 
 .light-bg-2 {
-    background: #FAF3EB;
+    background: #ecf5f7;
 }
 
 .fouder-wrap .fouder-thumb {
@@ -576,7 +589,7 @@ img {
     font-size: 16px;
     font-weight: 600;
     padding: 20px 35px;
-    color: #056251;
+    color: #185a66;
 }
 
 .about-right-wrap p {
@@ -596,8 +609,8 @@ img {
 .about-feature-list ul li i {
     font-size: 13px;
     margin-right: 15px;
-    color: #056251;
-    border: 1px solid #056251;
+    color: #185a66;
+    border: 1px solid #185a66;
     padding: 3px 4px;
     border-radius: 50%;
 }
@@ -627,7 +640,7 @@ img {
     content: "";
     width: 100%;
     height: 100%;
-    background-color: #070707;
+    background-color: #185a66;
     opacity: 0.7;
     top: 0;
     left: 0;
@@ -641,7 +654,7 @@ img {
 .single-counter-box p.counter-number {
     font-size: 52px;
     font-weight: 600;
-    color: #ffb966;
+    color: #f08143;
 }
 
 .single-counter-box h6 {
@@ -651,7 +664,7 @@ img {
     color: #fff;
 }
 
-.about-footer, .about-contact-area, .contact-footer{
+.about-footer,  .contact-footer{
     background-color: #FCF2E8;
 }
 
@@ -675,7 +688,7 @@ img {
 }
 
 .light-bg-1 {
-    background: #FCF2E8;
+    background: #ecf5f7;
 }
 
 .bread-bg .bg-tag {
@@ -687,8 +700,22 @@ img {
 }
 
 .bg-tag-orange{
-    background: #ffb966;
+    background: #f08143;
     padding: 35px;
+}
+
+
+.sip-calculator{
+    position: relative;
+    margin-top: 80px;
+}
+
+.bg-tag-white{
+    background: #f08143;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 10px;
 }
 
 .bg-tag-orange h2{
@@ -760,6 +787,18 @@ img {
 
 
 
+/********************     FINANCIAL CALCULATOR  *********************/
+/********************     CSS  START  *********************/
+
+.breadcrumb-area.calculator .section-title p::before{
+    margin: 0 auto;
+    right: 170px;
+}
+
+
+/********************     FINANCIAL CALCULATOR  *********************/
+/********************     CSS  END  *********************/
+
 
 /********************     TAB SECTION  *********************/
 /********************     CSS  START  *********************/
@@ -769,7 +808,7 @@ img {
     padding: 50px 0px;
 }
 
-#SectionTab1, #SectionTab2{
+.taxation-tab #SectionTab1, .taxation-tab #SectionTab2, .taxation-tab #SectionTab3{
     margin-top: 80px;
 }
 
@@ -781,7 +820,7 @@ img {
 
 .TabButton:hover{
     transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-    background-color: #ffb966;
+    background-color: #f08143;
     color: #fff;
 }
 
@@ -797,7 +836,7 @@ img {
     height: 0;
     border-style: solid;
     border-width: 6px 7px 0 7px;
-    border-color: #056250 transparent transparent transparent;
+    border-color: #185a66 transparent transparent transparent;
     transition: none !important;
 }
 
@@ -809,14 +848,14 @@ img {
     z-index: 1;
     letter-spacing: .1em;
     padding: 13px 50px;
-    color: #056250;
+    color: #185a66;
     border: 1px solid #e5e7e9;
     cursor: pointer;
     text-transform: uppercase;
 }
 .TabButtonSelected {
   color: #fff !important;
-  background-color: #056250 !important;
+  background-color: #185a66 !important;
   font-weight: 600;
   border: none;
 }
@@ -828,6 +867,10 @@ display: none;
 display: block;
 }
 
+.calculator-tabs .TabButton{
+    font-size: 15px;
+    letter-spacing: .5px;
+}
 
 /********************     TAB SECTION  *********************/
 /********************     CSS  END  *********************/
@@ -923,7 +966,7 @@ button, input, textarea, a:hover, a:focus, a:visited {
     flex: 0 0 60px;
 }
 .contact-icon {
-    background: #FFB966;
+    background: #f08143;
     margin: 0 60px;
     width: 60px;
     height: 60px;
@@ -1090,7 +1133,7 @@ button, input, textarea, a:hover, a:focus, a:visited {
 
 .contact-section-inner {
     position: relative;
-    background-image: url('images/contact_bg.jpg');
+    background-image: url('images/contact_bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1115,7 +1158,7 @@ button, input, textarea, a:hover, a:focus, a:visited {
 
 .main-btn, .main-btn.white {
     display: inline-block;
-    background: #FFB966;
+    background: #f08143;
     color: #061815;
     font-family: "Syne", sans-serif;
     font-size: 16px;
@@ -1127,6 +1170,11 @@ button, input, textarea, a:hover, a:focus, a:visited {
     cursor: pointer;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+}
+
+.main-btn:hover{
+    background-color: #185a66;
+    color: #fff;
 }
 
 
@@ -1147,7 +1195,7 @@ p.company-desc {
 
 .support-icon i {
     font-size: 50px;
-    color: #498A7C;
+    color: #185a66;
 }
 
 .support-content {
@@ -1174,7 +1222,7 @@ p.company-desc {
 
 .footer-widget ul li i {
     font-size: 14px;
-    color: #FFB966;
+    color: #f08143;
     margin-right: 10px;
 }
 
@@ -1244,7 +1292,7 @@ li {
 }
 
 .yellow-bg {
-    background: #FFB966;
+    background: #f08143;
 }
 
 .footer-bottom p {
@@ -1393,7 +1441,7 @@ li {
 
 .hamburger {
     position: absolute;
-    top: 5px;
+    top: 10px;
     right: 15px;
     /* line-height: 20px; */
     padding: 5px;
@@ -1404,7 +1452,7 @@ li {
     font-weight: bold;
     outline: none;
     z-index: 1111;
-    background: #056250;
+    background: #185a66;
 }
 
 .cross{
@@ -1422,14 +1470,14 @@ li {
   outline:none;
   z-index:22222;
 }
-.menu{z-index:1111; font-weight:bold; font-size:0.8em; width:100%; background:#056250;  position:absolute; text-align:center; font-size:12px; top: 0; left: 0;min-height: 100%;}
+.menu{z-index:1111; font-weight:bold; font-size:0.8em; width:100%; background:#185a66;  position:absolute; text-align:center; font-size:12px; top: 0; left: 0;min-height: 100%;}
 .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none; padding-top: 80px;}
 .menu li {display: block;   padding:15px 0 15px 0;}
-.menu li:hover{display: block;    background:#056251; padding:15px 0 15px 0;}
+.menu li:hover{display: block;    background:#185a66; padding:15px 0 15px 0;}
 .menu ul li a { text-decoration:none;  margin: 0px; color:#fff;}
 .menu ul li a:hover {  color: #fff; text-decoration:none;}
 .menu a{text-decoration:none; color:#fff;}
-.menu a:hover{text-decoration:none; color:#056251;}
+.menu a:hover{text-decoration:none; color:#185a66;}
 
 .fa-chevron-right{
     font-size: 12px;
@@ -1458,7 +1506,7 @@ li {
 	top: 0;
 	right: 0;
 	width: 100%;
-	background-color: #056250;
+	background-color: #185a66;
   color: #fff;
 	opacity: 0;
 	display: none;
@@ -1513,6 +1561,7 @@ li {
     p{
         font-size: 14px;
         line-height: normal;
+        text-align: justify;
     }
 
     .mt-90 {
@@ -1553,10 +1602,8 @@ li {
         align-items: center;
     }
 
-    .mobile-logo a{
-        color: #fff;
-        font-weight: 500;
-        font-size: 18px;
+    .mobile-logo img{
+        width: 30px;
     }
 
     .section-title{
@@ -1588,6 +1635,7 @@ li {
             line-height: normal;
             font-weight: 500;
             margin: 0;
+            text-align: center;
         }
     
         .single-counter-box h6 {
@@ -1708,6 +1756,7 @@ li {
     p{
         font-size: 12px;
         line-height: normal;
+        text-align: justify;
     }
 
     .section-title{
@@ -1804,8 +1853,8 @@ li {
     .about-feature-list ul li i {
         font-size: 8px;
         margin-right: 8px;
-        color: #056251;
-        border: 1px solid #056251;
+        color: #185a66;
+        border: 1px solid #185a66;
         padding: 2px 3px;
         border-radius: 50%;
     }
@@ -1855,7 +1904,7 @@ li {
         padding: 5px 15px;
     }
 
-    #SectionTab1, #SectionTab2 {
+    #SectionTab1, #SectionTab2, #SectionTab3 {
         margin-top: 30px;
     }
 
@@ -1909,6 +1958,7 @@ li {
         line-height: normal;
         font-weight: 500;
         margin: 0;
+        text-align: center;
     }
 
     .single-counter-box h6 {
@@ -1959,7 +2009,7 @@ li {
     }
 
     .contact-icon {
-        background: #FFB966;
+        background: #f08143;
         margin: 0 30px;
         width: 30px;
         height: 30px;

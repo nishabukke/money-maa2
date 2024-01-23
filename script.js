@@ -50,10 +50,10 @@ $(window).scroll(function() {
 $(window).on("scroll touchmove", function() {
 
   if ($(document).scrollTop() > $("#sticky-wrapper").position().top) {
-    $('.sticky-area').css('width', '1349px');
+    $('.sticky-area').css('width', '100%');
     $('.sticky-area').css('position', 'fixed');
     $('.sticky-area').css('top', '0px');
-    $('.sticky-area').css('background', '#fff');
+    $('.sticky-area').css('background', '#cddadc');
     $('.sticky-area').css('z-index', '1111');
     $('.sticky-area').css('box-shadow', '0 3px 16px -2px #ebe8e8');
     $('#sticky-wrapper').addClass('is-sticky');
@@ -164,3 +164,82 @@ function displaySection(evt, id) {
    evt.currentTarget.className += " d-chart-show";
 
 }
+
+
+// window load popup form
+
+
+// Get references to the close button and the modal
+const closeModalButton = document.getElementById("closeModalButton");
+const modal = document.getElementById("modal");
+const innerContainer = document.querySelector(".video-auto-play-container");
+const showModalButton = document.getElementById("showModalButton");
+  // Function to show the modal and set the body's overflow to hidden
+  function showModal() {
+    modal.style.display = "flex";
+    document.body.classList.add("modal-open");
+  }
+
+  // Function to hide the modal and reset the body's overflow to auto
+  function hideModal() {
+    modal.style.display = "none";
+    document.body.classList.remove("modal-open");
+  }
+  // Function to check if the user has seen the modal
+  // function hasSeenModal() {
+  //   return localStorage.getItem("modalSeen") === "true";
+  // }
+
+  // Function to mark the modal as seen
+  // function markModalAsSeen() {
+  //   localStorage.setItem("modalSeen", "true");
+  // }
+
+  // Check if the user has seen the modal
+  if (!hasSeenModal()) {
+    showModal();
+  }
+
+  // Add a click event listener to the close button
+  closeModalButton.addEventListener("click", (event) => {
+    event.stopPropagation(); // Prevent the click event from bubbling to the modal
+    hideModal();
+    // markModalAsSeen();
+  });
+
+  // Add a click event listener to the modal overlay
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      hideModal();
+      // markModalAsSeen();
+    }
+  });
+
+  // Prevent clicks inside the inner container from closing the modal
+  innerContainer.addEventListener("click", (event) => {
+    event.stopPropagation(); // Prevent the click event from bubbling to the modal
+  });
+
+  // Add a click event listener to the "Show Modal" button to trigger showModal
+  showModalButton.addEventListener("click", () => {
+    showModal();
+  });
+
+
+  // Add a click event listener to the video play button
+  // const videoPlayButton = document.querySelector(".video-auto-play-btn");
+  // videoPlayButton.addEventListener("click", () => {
+  //   markModalAsSeen();
+  // });
+
+  // var watchedVideo = localStorage.getItem('modalSeen');
+  // console.log(watchedVideo);
+  
+  // Call the showModal function when the DOM is fully loaded
+  // document.addEventListener("DOMContentLoaded", () => {
+  //   if(watchedVideo == 'true') {
+  //     hideModal()
+  //   } else {
+  //      showModal();    
+  //   }
+  // });
