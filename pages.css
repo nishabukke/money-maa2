@@ -2066,6 +2066,7 @@ li {
 
     p.company-desc {
         margin: 15px 0;
+        text-align: center;
     }
 
     .footer-widget h5 {
@@ -2118,10 +2119,29 @@ li {
 
     .footer-contact-info p{
         margin-bottom: 5px;
+        text-align: center;
     }
 
     .footer-bottom p {
         font-size: 12px;
     }
+
+    .contact-details-wrapper {
+        max-width: calc(100% - 0px);
+    }
+
+    .breadcrumb-area.services .section-title p:before {
+        margin: 0 auto;
+        right: 150px;
+    }
+
+    .section-title p{
+        padding-left: 135px !important;
+    }
+
+    .calculator .section-title p{
+        padding-left: 120px !important;
+    }
+
     /* footer section end */
 }
