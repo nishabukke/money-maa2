@@ -196,9 +196,9 @@ const showModalButton = document.getElementById("showModalButton");
   // }
 
   // Check if the user has seen the modal
-  if (!hasSeenModal()) {
-    showModal();
-  }
+  // if (!hasSeenModal()) {
+  //   showModal();
+  // }
 
   // Add a click event listener to the close button
   closeModalButton.addEventListener("click", (event) => {

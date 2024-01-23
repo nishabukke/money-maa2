@@ -1,6 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=Syne:wght@400;500&display=swap');
 
 
+a[href^="tel"] {
+    color: inherit; /* Inherit text color of parent element. */
+    text-decoration: none; /* Remove underline. */
+    /* Additional css `propery: value;` pairs here */
+  }
+  
+  *[x-apple-data-detectors],  /* iOS */
+      .x-gmail-data-detectors,    /* Gmail */
+      .x-gmail-data-detectors *,
+      .aBn {
+          border-bottom: 0 !important;
+          cursor: default !important;
+          color: inherit !important;
+          text-decoration: none !important;
+          font-size: inherit !important;
+          font-family: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+      }
+  
+
 .preloader {
     position: fixed;
     left: 0px;
