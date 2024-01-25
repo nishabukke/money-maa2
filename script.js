@@ -185,33 +185,44 @@ const showModalButton = document.getElementById("showModalButton");
     modal.style.display = "none";
     document.body.classList.remove("modal-open");
   }
+
+  // Function to check if the user has seen the modal in the current session
+function hasSeenModalInSession() {
+  return sessionStorage.getItem("modalSeen") === "true";
+}
+
   // Function to check if the user has seen the modal
-  // function hasSeenModal() {
-  //   return localStorage.getItem("modalSeen") === "true";
-  // }
+  function hasSeenModal() {
+    return sessionStorage.getItem("modalSeen") === "true";
+  }
+
+  // Function to mark the modal as seen for the current session
+function markModalAsSeenInSession() {
+  sessionStorage.setItem("modalSeen", "true");
+}
 
   // Function to mark the modal as seen
-  // function markModalAsSeen() {
-  //   localStorage.setItem("modalSeen", "true");
-  // }
+  function markModalAsSeen() {
+    localStorage.setItem("modalSeen", "true");
+  }
 
   // Check if the user has seen the modal
-  // if (!hasSeenModal()) {
-  //   showModal();
-  // }
+  if (!hasSeenModalInSession()) {
+    showModal();
+  }
 
   // Add a click event listener to the close button
   closeModalButton.addEventListener("click", (event) => {
     event.stopPropagation(); // Prevent the click event from bubbling to the modal
     hideModal();
-    // markModalAsSeen();
+    markModalAsSeenInSession();
   });
 
   // Add a click event listener to the modal overlay
   modal.addEventListener("click", (event) => {
     if (event.target === modal) {
       hideModal();
-      // markModalAsSeen();
+      markModalAsSeenInSession();
     }
   });
 
@@ -224,22 +235,3 @@ const showModalButton = document.getElementById("showModalButton");
   showModalButton.addEventListener("click", () => {
     showModal();
   });
-
-
-  // Add a click event listener to the video play button
-  // const videoPlayButton = document.querySelector(".video-auto-play-btn");
-  // videoPlayButton.addEventListener("click", () => {
-  //   markModalAsSeen();
-  // });
-
-  // var watchedVideo = localStorage.getItem('modalSeen');
-  // console.log(watchedVideo);
-  
-  // Call the showModal function when the DOM is fully loaded
-  // document.addEventListener("DOMContentLoaded", () => {
-  //   if(watchedVideo == 'true') {
-  //     hideModal()
-  //   } else {
-  //      showModal();    
-  //   }
-  // });
