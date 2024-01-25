@@ -1644,13 +1644,13 @@ li {
     }
 
     .section-title h2 {
-        font-size: 32px;
-        line-height: 37px;
+        font-size: 24px;
+        line-height: 28px; 
     }
 
     .section-title a {
-        font-size: 34px;
-        line-height: 37px;
+        font-size: 24px;
+        line-height: 28px; 
     }
 
     .section-title h6 {
@@ -1797,13 +1797,17 @@ li {
     }
 
     .section-title h2 {
-        font-size: 32px;
-        line-height: 37px;
+        font-size: 24px;
+        line-height: 28px; 
     }
 
     .section-title a {
-        font-size: 34px;
-        line-height: 37px;
+        font-size: 24px;
+        line-height: 28px; 
+    }
+
+    .section-title p::before{
+        display: none;
     }
 
     /* header css */
@@ -1978,6 +1982,10 @@ li {
         gap: 40px;
     }
 
+    .feature-section .row.mt-60{
+        margin-top: 35px;
+    }
+
     .feature-section:before, .feature-item-wrap::after, .section-title a:before{
         display: none;
     }
@@ -2103,6 +2111,14 @@ li {
 
     .services-list, .footer-contact-info, .project-gallery{
         text-align: center;
+    }
+
+    .service-list2{
+        margin-top: 0 !important;
+    }
+
+    .service2-ul{
+        padding-top: 0 !important;
     }
 
     .founder-year-wrap span {
