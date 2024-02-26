@@ -162,7 +162,6 @@ img {
 }
 
 .header-area .navigation {
-    padding: 0px 30px;
     height: 90px;
     position: relative;
     z-index: 9;
@@ -178,9 +177,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #cddadc;
     border-radius: 0 0 10px 10px;
-    padding: 0 30px;
 }
 
 .header-area .header-inner-box .logo {
@@ -713,7 +710,7 @@ img {
     bottom: 0;
     left: 0;
     background: #fff;
-    padding: 35px;
+    padding: 15px;
 }
 
 .bg-tag-orange{
@@ -742,7 +739,7 @@ img {
 }
 
 .bread-bg .bg-tag h2 {
-    font-size: 48px;
+    font-size: 42px;
     font-weight: 600;
     margin: 0;
 }
@@ -774,7 +771,7 @@ img {
 
 
 
-/********************     CHILD FUTURE SAVING, RETIREMENT, PMS PAGE  *********************/
+/********************     CHILD FUTURE SAVING, RETIREMENT, PMS PAGE, DEMAT PAGE  *********************/
 /********************     CSS  START  *********************/
 
 .breadcrumb-area.services.child-future .section-title p:before {
@@ -799,7 +796,30 @@ img {
         margin-top: 30px;
 }
 
-/********************     CHILD FUTURE SAVING, RETIREMENT, PMS PAGE  *********************/
+/* .demat-doc-desc{
+    margin-top: 60px;
+    display: flex;
+    gap: 30px;
+} */
+
+.demat-docs p{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    padding: 20px 0px;
+    border-bottom: 1px solid #ececec;
+}
+
+.demat-docs span{
+    border: 2px solid #185a66;
+    color: #185a66;
+    padding: 3px 4px;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+/********************     CHILD FUTURE SAVING, RETIREMENT, PMS PAGE, DEMAT PAGE  *********************/
 /********************     CSS  END  *********************/
 
 
@@ -813,6 +833,40 @@ img {
 }
 
 /********************     FINANCIAL CALCULATOR  *********************/
+/********************     CSS  END  *********************/
+
+
+
+/********************     OTHER INSURANCE  *********************/
+/********************     CSS  START  *********************/
+
+.gi-item-wrap{
+    min-height: 680px;
+}
+
+.gi-content-group{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 60px;
+}
+
+.gi-content p span{
+    font-size: 10px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #185a66;
+    padding: 2px 3px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.gi-desc{
+    font-size: 16px !important;
+}
+
+
+/********************     OTHER INSURANCE  *********************/
 /********************     CSS  END  *********************/
 
 

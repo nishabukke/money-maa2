@@ -53,7 +53,7 @@ $(window).on("scroll touchmove", function() {
     $('.sticky-area').css('width', '100%');
     $('.sticky-area').css('position', 'fixed');
     $('.sticky-area').css('top', '0px');
-    $('.sticky-area').css('background', '#cddadc');
+    $('.sticky-area').css('background', '#ecf5f7');
     $('.sticky-area').css('z-index', '1111');
     $('.sticky-area').css('box-shadow', '0 3px 16px -2px #ebe8e8');
     $('#sticky-wrapper').addClass('is-sticky');

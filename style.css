@@ -45,7 +45,7 @@ body{
     font-weight: 400;
     position: relative;
     z-index: 1;
-    background: #ecf5f7;
+    background: #fff;
     overflow-x: hidden;
 }
 
@@ -92,7 +92,7 @@ a {
 /* top header */
 
 .header-top-area {
-    padding: 10px 0;
+    padding: 8px 0;
 }
 
 .header-container{
@@ -147,12 +147,14 @@ a {
 
 /* header-area */
 
+/* .sticky-area{} */
+
 .header-area {
     position: relative;
+    background-color: #ecf5f7;
 }
 
 .header-area .navigation {
-    padding: 0px 30px;
     height: 90px;
     position: relative;
     z-index: 9;
@@ -168,9 +170,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #cddadc;
-    border-radius: 0 0 10px 10px;
-    padding: 0 30px;
+    /* padding: 0 30px; */
 }
 
 .header-area .header-inner-box .logo {
@@ -356,8 +356,7 @@ img {
 }
 
 .light-bg-2 {
-    background: #ecf5f7;
-    ;
+    background: #fff;
 }
 
 .hero-area-content {
@@ -582,6 +581,7 @@ h3 {
     z-index: 1;
     transition: 0.5s;
     position: relative;
+    min-height: 380px;
 }
 
 .feature-item-wrap .feature-icon {
@@ -640,13 +640,24 @@ h3 {
     font-size: 30px;
     font-weight: 600;
     color: #fff;
+    margin-bottom: 20px;
 }
 
 .feature-item-wrap .feature-content p {
-    font-size: 18px;
     font-weight: 400;
     color: #fff;
-    margin-top: 15px;
+    margin: 0;
+    padding: 5px 0px;
+}
+
+.feature-content p span{
+    font-size: 10px;
+    margin-right: 5px;
+    background-color: #fff;
+    color: #185a66;
+    border: 1px solid #fff;
+    padding: 2px 3px;
+    border-radius: 50%;
 }
 
 
