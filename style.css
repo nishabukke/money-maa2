@@ -36,7 +36,7 @@ a[href^="tel"] {
 }
 
 body{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     max-width: 1600px;
     font-family: "Jost", sans-serif;
@@ -155,7 +155,6 @@ a {
 }
 
 .header-area .navigation {
-    height: 90px;
     position: relative;
     z-index: 9;
     display: flex;
@@ -225,7 +224,7 @@ a {
     font-size: 18px;
     font-weight: 600;
     display: block;
-    padding: 35px 0;
+    padding: 25px 0;
     color: #185a66;
 }
 
@@ -243,7 +242,7 @@ a {
 .main-menu li:hover .sub-menu {
     opacity: 1;
     visibility: visible;
-    top: 90px;
+    top: 70px;
 }
 
 .main-menu li:hover .sub-menu::after {
@@ -1611,9 +1610,8 @@ li {
     }
 
     .section-title h2 {
-        font-size: 24px;
-        line-height: 28px;
-    
+        font-size: 18px;
+        line-height: 24px;
     }
 
     .section-title a {
@@ -1775,7 +1773,16 @@ li {
 @media screen and (max-width:450px) {
 
     /* common css */
+    
+    .menu li {
+        padding: 5px 0 5px 0;
+    }
 
+    .mobile-logo{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 
     .hamburger, .cross, .menu{
         display: block;
@@ -1791,7 +1798,7 @@ li {
     }
 
     .section-padding{
-        padding: 30px 0px;
+        padding: 30px 30px;
     }
 
     p{
@@ -1893,8 +1900,8 @@ li {
     }
 
     .section-title h2 {
-        font-size: 24px;
-        line-height: 28px;   
+        font-size: 18px;
+        line-height: 24px;   
     }
 
     .section-title a {
@@ -1911,6 +1918,7 @@ li {
     .feature-item-wrap {
         padding: 20px;
         padding-top: 30px;
+        min-height: 250px;
     }
 
     .feature-item-wrap .feature-icon {
@@ -1926,7 +1934,6 @@ li {
     .feature-item-wrap .feature-content p {
         font-size: 12px;
         margin-top: 10px;
-        line-height: 0;
     }
 
     .feature-section .row:nth-child(2){
@@ -1990,6 +1997,14 @@ li {
     .service-bg .more-service-btn {
         padding: 5px;
         font-size: 13px;
+    }
+
+    .single-service-inner .details-link{
+        bottom: -5px;
+    }
+
+    .single-service-inner:nth-of-type(4) .details-link {
+        bottom: 5px;
     }
 
     /* service section end */
@@ -2101,6 +2116,14 @@ li {
         flex-direction: column;
         padding: 0 !important;
         padding-top: 10px !important;
+    }
+
+    .testimonial-slide-inner{
+        padding: 0;
+    }
+
+    .testimonial-author-wrap{
+        display: none;
     }
 
     .testimonial-content{

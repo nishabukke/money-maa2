@@ -35,7 +35,7 @@ a[href^="tel"] {
 }
 
 body{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     max-width: 1600px;
     font-family: "Jost", sans-serif;
@@ -162,7 +162,6 @@ img {
 }
 
 .header-area .navigation {
-    height: 90px;
     position: relative;
     z-index: 9;
     display: flex;
@@ -230,18 +229,18 @@ img {
     font-size: 18px;
     font-weight: 600;
     display: block;
-    padding: 35px 0;
+    padding: 25px 0;
     color: #185a66;
 }
 
 .header-area .is-sticky .main-menu li:hover .sub-menu {
-    top: 90px;
+    top: 70px;
 }
 
 .main-menu li:hover .sub-menu {
     opacity: 1;
     visibility: visible;
-    top: 90px;
+    top: 70px;
 }
 
 .main-menu li:hover .sub-menu::after {
@@ -1827,6 +1826,12 @@ li {
         display: block;
       }
 
+      .mobile-logo{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
     h1{
         font-size: 30px;
         line-height: 34px;
@@ -1837,7 +1842,7 @@ li {
     }
 
     .section-padding{
-        padding: 30px 0px;
+        padding: 30px 30px;
     }
 
     p{
@@ -1851,8 +1856,8 @@ li {
     }
 
     .section-title h2 {
-        font-size: 24px;
-        line-height: 28px; 
+        font-size: 18px;
+        line-height: 24px;
     }
 
     .section-title a {
@@ -1968,7 +1973,7 @@ li {
     }
 
     .service-page-content {
-        margin-top: 30px;
+        margin-top: 0px;
     }
 
     .service-page-content h2 {
@@ -2007,6 +2012,32 @@ li {
         font-size: 20px;
     }
 
+    .demat-docs p {
+        font-size: 14px;
+        padding: 15px 0px;
+    }
+
+    .demat-docs span {
+        padding: 2px 3px;
+        font-size: 12px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    .menu li {
+        padding: 5px 0 5px 0;
+    }
+
+    .sip-calculator{
+        margin-top: 0;
+    }
+
+    .calculator-tabs .TabButton {
+        font-size: 12px;
+    }
+
     /* services page css end */
 
     /* feature section  */
@@ -2029,7 +2060,6 @@ li {
     .feature-item-wrap .feature-content p {
         font-size: 12px;
         margin-top: 10px;
-        line-height: 0;
     }
 
     .feature-section .row:nth-child(2){
@@ -2087,6 +2117,20 @@ li {
         padding: 5px 15px;
     }
     /* contact area section end */
+
+    /* about page section start */
+
+    .fouder-wrap{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .fouder-wrap .founder-content {
+        padding-left: 0px;
+    }
+
+    /* about page section end */
+
 
     /* contact page section */
 
@@ -2216,7 +2260,7 @@ li {
     }
 
     .section-title p{
-        padding-left: 135px !important;
+        padding-left: 0px !important;
     }
 
     .calculator .section-title p{
