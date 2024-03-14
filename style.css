@@ -1086,22 +1086,22 @@ h3 {
 /* client section */
 
 .clients-area.pb-120 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 0px;
+    padding: 0px 0px 120px 0px;
     background-color: #fff;
 }
 
 
 .client-logo-wrap {
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;  
 }
 
 .client-logo-wrap img {
     border: 1px solid #ddd;
     padding: 20px;
-    margin: 0 10px;
+    /* margin: 0 10px; */
 }
 
 
@@ -2013,6 +2013,7 @@ li {
     
     .client-logo-wrap img{
         margin-bottom: 10px;
+        padding: 5px;
     }
 
     /* client section end */

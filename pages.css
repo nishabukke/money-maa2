@@ -384,6 +384,37 @@ img {
     color: #061815;
     letter-spacing: 1px;
 }
+
+.award-img img{
+    width: 100%;
+}
+
+.award-img{
+    padding: 20px;
+    border: 1px solid #ddd;
+    min-height: 560px;
+}
+
+.awards-section .section-title h6{
+    color: #185a66;
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: uppercase;
+    border: 1px solid #185a66;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-bottom: 20px;
+}
+
+.award-content{
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+}
+
+
 /* 
 .section-title h2 {
     font-size: 50px;
@@ -1953,6 +1984,18 @@ li {
         border: 1px solid #185a66;
         padding: 2px 3px;
         border-radius: 50%;
+    }
+
+    .award-img{
+        min-height: auto;
+    }
+
+    .awards-section .row:nth-child(2){
+        gap: 20px;
+    }
+
+    .award-content p{
+        text-align: center;
     }
 
     /* about page css end */
