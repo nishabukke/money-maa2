@@ -1207,6 +1207,11 @@ p.company-desc {
     margin-bottom: 40px;
 }
 
+.project-gallery h5{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
 .footer-widget ul li {
     display: block;
     margin-bottom: 20px;
